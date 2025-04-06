@@ -1,11 +1,23 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="3;url=https://t.me/MONEY_ECCPBOT?start=07121989596">
-    <title>إعادة التوجيه...</title>
+    <title>عد النقرة</title>
+    <script>
+        // هنا يتم حساب النقرة عبر API لحساب النقرات
+        function countClick() {
+            fetch('https://api.countapi.xyz/hit/vesco66h/Redirect_page') // API لحساب النقرات
+                .then(response => response.json())
+                .then(data => {
+                    console.log("النقرات الحالية: " + data.value);
+                    alert("تم حساب النقرة!");
+                });
+        }
+    </script>
 </head>
 <body>
-    <p>سيتم توجيهك خلال لحظات، إذا لم يتم التوجيه، <a href="https://t.me/MONEY_ECCPBOT?start=07121989596">اضغط هنا</a>.</p>
+    <p>اضغط على الرابط التالي لعد النقر:</p>
+    <!-- الرابط يبقى كما هو، ولكن بدون التوجيه إلى البوت -->
+    <a href="javascript:void(0);" onclick="countClick()">اضغط هنا</a>
 </body>
 </html>
